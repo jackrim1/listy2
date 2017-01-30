@@ -23,7 +23,10 @@
 
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="about">About</a></li>
+        <li>
+        <!-- <%= @user.email %> -->
+        <a href="about">About</a>
+        </li>
         <%= render 'devise/menu/registration_items' %>
         <%= render 'devise/menu/login_items' %>
       </ul>
