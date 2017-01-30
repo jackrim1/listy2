@@ -1,5 +1,6 @@
 class ListsController < ApplicationController
 
+
   def index
     @lists = List.all
   end
@@ -9,10 +10,13 @@ class ListsController < ApplicationController
   end
 
   def show
+    @list = List.find(list_params)
   end
 
   def create
-    @list = List.create(list_params)
+    @list = List.new(params[:list].permit(:name))
+    @list.user = current_user
+    @list.save
     redirect_to '/lists'
   end
 
