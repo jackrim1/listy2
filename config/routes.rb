@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/show'
+
   get 'pages/home'
 
   root to: 'pages#home'
