@@ -1,0 +1,9 @@
+<% if @lists.any? %>
+  <% @lists.each do |list| %>
+    <h2><%= list.name %></h2>
+  <% end %>
+<% else %>
+  <h1>No lists yet</h1>
+<% end %>
+
+<a href="#">Add a list</a>
