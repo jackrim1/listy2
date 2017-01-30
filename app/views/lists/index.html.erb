@@ -1,17 +1,17 @@
 <a href="/lists/new">Add a list</a>
 
-<div class='container'>
+<div class='flexcontainer'>
 <%if @lists.none? %>
   No lists yet
   <% else %>
-  <div class='row'>
   <% @lists.each do |list| %>
-  <div class='flexcontainer'
+  <div class='flex-item'>
     <h2><%= list.name %></h2>
   </div>
   <% end %>
-
 </div>
 <% end %>
+
+
 
 

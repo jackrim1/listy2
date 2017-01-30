@@ -7,5 +7,12 @@
    display: flex;
    -webkit-flex-direction: row;
    flex-direction: row;
-   border: 2px solid #B22222;
+   border: 1px solid #D3D3D3;
+   padding: 1px;
+}
+
+.flex-item {
+  border: 1px solid #D3D3D3;
+   padding: 1px;
+   width: 200px;
 }
